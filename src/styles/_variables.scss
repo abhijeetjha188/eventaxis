@@ -1,0 +1,22 @@
+:root {
+  /* Colors - Brand & Primary */
+  --color-primary: #00336ecf;
+  --color-primary-contrast: #ffffff; // Text color on top of primary
+  
+  /* Colors - Navigation & Text */
+  --color-nav-link: #374151;        // Gray 700
+  --color-nav-active: #00336ecf;      // Indigo 600
+  --color-text-muted: #6b7280;      // Gray 500
+  
+  /* Colors - Backgrounds & Borders */
+  --color-bg-content: #f9fafb;      // Slate 50
+  --color-bg-footer: #ffffff;
+  --color-border-header: #E0E7FF;
+  --color-border-footer: #e5e7eb;
+
+  /* Layout Spacing */
+  --header-height: 64px;
+  --footer-height: 48px;
+  --content-max-width: 1200px;
+  --container-padding: 24px;
+}

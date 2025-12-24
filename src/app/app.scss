@@ -1,0 +1,96 @@
+/* ================= LAYOUT CONTAINER ================= */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--header-height);
+  padding: 0 32px;
+
+  background-color: var(--color-primary);
+  color: white;
+
+  border-bottom: 1px solid var(--color-border-header);
+}
+
+/* ================= LOGO ================= */
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  height: 36px;
+  width: auto;
+  cursor: pointer;
+  filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+  transform: rotate(90deg); /* Modern interaction for an 'Axis' logo */
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  padding: 6px 0;
+}
+
+.nav a.active {
+  color: var(--color-nav-active);
+  border-bottom: 2px solid var(--color-nav-active);
+}
+
+/* ================= CONTENT ================= */
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--color-bg-content);
+
+  display: flex;
+  justify-content: center;
+}
+
+.app-content > * {
+  width: 100%;
+  max-width: var(--content-max-width);
+  padding: var(--container-padding);
+}
+
+/* ================= FOOTER ================= */
+
+.app-footer {
+  height: var(--footer-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg-footer);
+  border-top: 1px solid var(--color-border-footer);
+
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+

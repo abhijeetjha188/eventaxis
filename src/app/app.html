@@ -1,0 +1,47 @@
+<div class="app-container">
+  <!-- Header -->
+  <header class="app-header">
+    <!-- Logo -->
+    <div class="logo-wrapper">
+      <img src="assets/branding/logo.svg" alt="EventAxis" class="app-logo" />
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/posts" routerLinkActive="active">Posts</a>
+      <a routerLink="/events" routerLinkActive="active">Events</a>
+      <a routerLink="/about-us" routerLinkActive="active">Register</a>
+      <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="app-content flex-grow bg-slate-50 px-6 py-10 md:px-12">
+
+    <div class="max-w-7xl mx-auto">
+
+      <router-outlet></router-outlet>
+
+      <div class="mt-8 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">
+          Hello <span class="text-[#00336ecf]">world!</span>
+        </h1>
+        <p class="mt-2 text-slate-600">
+          Welcome to EventAxis. Your dashboard is ready.
+        </p>
+
+        <button class="mt-6 px-6 py-2 bg-[#00336ecf] text-white font-semibold rounded-lg 
+                     hover:bg-[#11a3aa] transition-colors shadow-md shadow-teal-100">
+          Explore Events
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <span>© 2025 EventAxis. All rights reserved.</span>
+  </footer>
+</div>
