@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "my-app": {
+    "eventaxis": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -76,10 +76,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-app:build:production"
+              "buildTarget": "eventaxis:build:production"
             },
             "development": {
-              "buildTarget": "my-app:build:development"
+              "buildTarget": "eventaxis:build:development"
             }
           },
           "defaultConfiguration": "development"

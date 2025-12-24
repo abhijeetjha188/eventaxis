@@ -8,5 +8,5 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class App {
-  protected readonly title = signal('my-app');
+  protected readonly title = signal('eventaxis');
 }
