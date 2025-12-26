@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostComponent } from './posts/post/post';
+import { DashboardModule } from './dashboard/dashboard-module';
+import { PostsModule } from './posts/posts-module';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: PostComponent
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard-module').then(m => DashboardModule)
+  },
+  {
+    path: 'posts',
+    loadChildren: () => import('./posts/posts-module').then(m => PostsModule)
   }
 ];
 

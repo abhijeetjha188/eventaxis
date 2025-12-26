@@ -6,6 +6,6 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
   standalone: false,
   templateUrl: './post.html',
   styleUrls: ['./post.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  // changeDetection: ChangeDetectionStrategy.Default
 })
 export class PostComponent {}

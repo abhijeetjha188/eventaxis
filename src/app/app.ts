@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import {Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: false,
   styleUrl: './app.scss',
-  changeDetection: ChangeDetectionStrategy.Default
+  // changeDetection: ChangeDetectionStrategy.Default
 })
 export class App {
   protected readonly title = signal('eventaxis');

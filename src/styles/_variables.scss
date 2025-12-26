@@ -1,18 +1,18 @@
 :root {
   /* Colors - Brand & Primary */
-  --color-primary: #00336ecf;
+  --color-primary: #213448;
+  --color-secondary: #ffca28;
   --color-primary-contrast: #ffffff; // Text color on top of primary
   
   /* Colors - Navigation & Text */
-  --color-nav-link: #374151;        // Gray 700
-  --color-nav-active: #00336ecf;      // Indigo 600
-  --color-text-muted: #6b7280;      // Gray 500
+  --color-app-bg: #354245;    
+  --color-nav-active: #ffca28; // secondary
+  --color-text-muted: #ffffff;
   
   /* Colors - Backgrounds & Borders */
-  --color-bg-content: #f9fafb;      // Slate 50
-  --color-bg-footer: #ffffff;
-  --color-border-header: #E0E7FF;
-  --color-border-footer: #e5e7eb;
+  --color-bg-footer: #907f38; //  // mix of primary and secondary
+  --color-border-header: #b5aa7a; // mix of primary, secondary and white
+  --color-border-footer: #b5aa7a;  // mix of primary, secondary and white
 
   /* Layout Spacing */
   --header-height: 64px;
