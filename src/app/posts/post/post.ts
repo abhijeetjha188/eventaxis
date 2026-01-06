@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { Post } from '../../models/Post';
+import { PostService } from '../../services/post-service';
 
 
 @Component({
@@ -8,4 +10,13 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
   styleUrls: ['./post.scss'],
   // changeDetection: ChangeDetectionStrategy.Default
 })
-export class PostComponent {}
+export class PostComponent {
+  @Input() post!: Post
+  @Input() index!: number;
+
+  constructor(private ps: PostService) { }
+
+  deletePost(post: Post): void {
+    this.ps.deletePost(post.id)
+  }
+}

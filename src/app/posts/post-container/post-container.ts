@@ -13,16 +13,20 @@ export class PostContainer implements OnInit {
 
   postList$!: Observable<Post[]>
 
-  constructor(private ps: PostService, private cdr: ChangeDetectorRef) { }
+  postList!: Post[]
+
+  constructor(private ps: PostService) {
+
+  }
 
   ngOnInit(): void {
-    this.getPosts()
+    this.getPosts();
+    this.postList$.subscribe((data) => this.postList = data)
   }
   getPosts() {
-    this.postList$ = this.ps.fetchPost()
+    this.postList$ = this.ps.postList$;
+    this.ps.fetchPost().subscribe();
   }
-  deletePost(index: number): void {
-    // this.postList.splice(index, 1);
-  }
+ 
 
 }

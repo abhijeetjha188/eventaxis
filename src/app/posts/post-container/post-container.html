@@ -1,21 +1,9 @@
-
-
 @if(postList$ | async; as posts) {
 <ng-container>
     @if (posts.length > 0) {
     <div class="post-container">
         @for (post of posts; track $index) {
-        <div class="post-card">
-            <div class="post-header">
-                <span class="post-index">#{{$index + 1}}</span>
-                <button class="delete-btn" (click)="deletePost($index)">
-                    Delete
-                </button>
-            </div>
-
-            <h3 class="post-title">{{ post.title }}</h3>
-            <p class="post-body">{{ post.body }}</p>
-        </div>
+        <app-post [post]="post" [index]="$index"></app-post>
         }
     </div>
     } @else {
@@ -23,4 +11,3 @@
     }
 </ng-container>
 }
-
