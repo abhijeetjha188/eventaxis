@@ -1,1 +1,11 @@
-<div>hello</div>
+<div class="post-card">
+    <div class="post-header">
+        <span class="post-index">#{{index + 1}}</span>
+        <button class="delete-btn" (click)="deletePost(post)">
+            Delete
+        </button>
+    </div>
+
+    <h3 class="post-title">{{ post.title }}</h3>
+    <p class="post-body">{{ post.body }}</p>
+</div>
